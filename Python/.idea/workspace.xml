@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d538da7b-ab8b-4f3e-95af-ead297c8aa5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/35-searchInsert.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/53-maxSubArray.py" afterDir="false" />
-    </list>
+    <list default="true" id="d538da7b-ab8b-4f3e-95af-ead297c8aa5c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +35,7 @@
       <workItem from="1631452765705" duration="19000" />
       <workItem from="1632141219505" duration="153000" />
       <workItem from="1632212869636" duration="84000" />
-      <workItem from="1632215197288" duration="267000" />
+      <workItem from="1632215197288" duration="377000" />
     </task>
     <servers />
   </component>
