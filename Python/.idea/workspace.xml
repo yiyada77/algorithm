@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d538da7b-ab8b-4f3e-95af-ead297c8aa5c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/162-findPeakElement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/350-intersect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/448-findDisappearedNumbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/48-rotate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/66-plusOne.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/73-setZeroes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/74-searchMatrix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/905-sortArrayByParity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +48,7 @@
       <workItem from="1632212869636" duration="84000" />
       <workItem from="1632215197288" duration="377000" />
       <workItem from="1632237313353" duration="358000" />
+      <workItem from="1635170360871" duration="6833000" />
     </task>
     <servers />
   </component>
