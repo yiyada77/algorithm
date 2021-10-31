@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d538da7b-ab8b-4f3e-95af-ead297c8aa5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2-addTwoNumbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/23-mergeKLists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/24-swapPairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/28-strStr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/33-search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/34-searchRange.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/56-merge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1a.py" beforeDir="false" afterPath="$PROJECT_DIR$/1a.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,7 @@
       <workItem from="1632215197288" duration="377000" />
       <workItem from="1632237313353" duration="358000" />
       <workItem from="1635170360871" duration="8059000" />
+      <workItem from="1635660976275" duration="3955000" />
     </task>
     <servers />
   </component>
