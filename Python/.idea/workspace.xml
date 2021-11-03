@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d538da7b-ab8b-4f3e-95af-ead297c8aa5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/61-rotateRight.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/62-uniquePaths.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/63-uniquePathsWithObstacles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/82-deleteDuplicates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/83-deleteDuplicates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/86-partition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/88-merge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
       <workItem from="1632215197288" duration="377000" />
       <workItem from="1632237313353" duration="358000" />
       <workItem from="1635170360871" duration="8059000" />
-      <workItem from="1635660976275" duration="5986000" />
+      <workItem from="1635660976275" duration="6860000" />
     </task>
     <servers />
   </component>
