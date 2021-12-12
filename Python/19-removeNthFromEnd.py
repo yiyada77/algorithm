@@ -3,6 +3,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = nextx
+
 def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
     pre = ListNode(None)
     pre.next = head

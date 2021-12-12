@@ -3,6 +3,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
 def mergeKLists(self, lists: List[ListNode]) -> ListNode:
     if len(lists) == 0:
         return None
@@ -18,14 +19,10 @@ def mergeKLists(self, lists: List[ListNode]) -> ListNode:
                 mini = i
         tmp = ListNode(lists[mini].val)
         lists[mini] = lists[mini].next
-        if lists[mini] == None:
-            lists.pop(mini)
 
-        if head == None:
-            head = tmp
-
-        if pre != None:
-            pre.next = tmp
+        if lists[mini] == None: lists.pop(mini)
+        if head == None: head = tmp
+        if pre != None: pre.next = tmp
 
         pre = tmp
 

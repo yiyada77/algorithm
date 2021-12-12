@@ -14,4 +14,5 @@ def searchRange(self, nums: List[int], target: int) -> List[int]:
             right = mid - 1
         else:
             left = mid + 1
+
     return [-1, -1]

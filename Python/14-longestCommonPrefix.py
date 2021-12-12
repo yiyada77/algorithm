@@ -12,4 +12,5 @@ def longestCommonPrefix(self, strs: List[str]) -> str:
             resList.append(first[i])
         else:
             break
+
     return ''.join(resList)

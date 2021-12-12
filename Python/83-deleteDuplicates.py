@@ -14,4 +14,5 @@ def deleteDuplicates(self, head: ListNode) -> ListNode:
             cur.next = cur.next.next
         else:
             cur = cur.next
+
     return head

@@ -16,4 +16,5 @@ def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
                 matrix[i][j] = matrix[i - 1][j] + matrix[i][j - 1]
             else:
                 matrix[i][j] = 0
+
     return matrix[m][n]
