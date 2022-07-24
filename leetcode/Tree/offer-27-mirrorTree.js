@@ -9,13 +9,13 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
- var mirrorTree = function(root) {
-    if(root===null){
+var mirrorTree = function (root) {
+    if (root === null) {
         return null
     }
-    const right=mirrorTree(root.right)
-    const left=mirrorTree(root.left)
-    root.left=right
-    root.right=left
+    const right = mirrorTree(root.right)
+    const left = mirrorTree(root.left)
+    root.left = right
+    root.right = left
     return root
 };

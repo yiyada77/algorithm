@@ -12,33 +12,33 @@
  */
 //root->left->right
 //递归实现
- var preorderTraversal = function(root) {
-    let resArr=[]
-    preorderHelper(root,resArr)
+var preorderTraversal = function (root) {
+    let resArr = []
+    preorderHelper(root, resArr)
     return resArr
 };
 
-function preorderHelper(node,arr){
-    if(node){
+function preorderHelper(node, arr) {
+    if (node) {
         arr.push(node.val)
-        preorderHelper(node.left,arr)
-        preorderHelper(node.right,arr)
+        preorderHelper(node.left, arr)
+        preorderHelper(node.right, arr)
     }
     return arr
 }
 //非递归实现
-var preorderTraversal = function(root) {
-    let resArr=[]
-    let stack=[]
-    let cur=root
-    while(cur||stack.length){
-        while(cur){
+var preorderTraversal = function (root) {
+    let resArr = []
+    let stack = []
+    let cur = root
+    while (cur || stack.length) {
+        while (cur) {
             resArr.push(cur.val)
             stack.push(cur)
-            cur=cur.left
+            cur = cur.left
         }
-        cur=stack.pop()
-        cur=cur.right
+        cur = stack.pop()
+        cur = cur.right
     }
     return resArr
 };

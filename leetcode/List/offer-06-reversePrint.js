@@ -9,11 +9,11 @@
  * @param {ListNode} head
  * @return {number[]}
  */
- var reversePrint = function(head) {
-    let arr=[]
-    while(head){
+var reversePrint = function (head) {
+    let arr = []
+    while (head) {
         arr.unshift(head.val)
-        head=head.next
+        head = head.next
     }
     return arr
 };

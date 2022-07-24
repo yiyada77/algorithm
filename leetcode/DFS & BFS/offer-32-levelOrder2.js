@@ -9,33 +9,33 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
- var levelOrder = function(root) {
-    let res=[]
-    let queue=[]
-    let tempArr=[]
-    let curNums=1  
-    let childNums=0
+var levelOrder = function (root) {
+    let res = []
+    let queue = []
+    let tempArr = []
+    let curNums = 1
+    let childNums = 0
 
-    if(root){
+    if (root) {
         queue.push(root)
-        while(queue.length){
-            
-            const curRoot=queue.shift()
-            if(curRoot.left){
+        while (queue.length) {
+
+            const curRoot = queue.shift()
+            if (curRoot.left) {
                 queue.push(curRoot.left)
                 childNums++
             }
-            if(curRoot.right){
+            if (curRoot.right) {
                 queue.push(curRoot.right)
                 childNums++
             }
             tempArr.push(curRoot.val)
             curNums--
-            if(curNums===0){
-                curNums=childNums
-                childNums=0
+            if (curNums === 0) {
+                curNums = childNums
+                childNums = 0
                 res.push(tempArr)
-                tempArr=[]
+                tempArr = []
             }
         }
     }

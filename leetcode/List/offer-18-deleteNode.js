@@ -10,14 +10,14 @@
  * @param {number} val
  * @return {ListNode}
  */
- var deleteNode = function(head, val) {
-    let res=new ListNode(0,head)
-    let cur=res
-    while(cur.next){
-        if(cur.next.val===val){
-            cur.next=cur.next.next
-        }else{
-            cur=cur.next
+var deleteNode = function (head, val) {
+    let res = new ListNode(0, head)
+    let cur = res
+    while (cur.next) {
+        if (cur.next.val === val) {
+            cur.next = cur.next.next
+        } else {
+            cur = cur.next
         }
     }
     return res.next

@@ -11,18 +11,18 @@
  * @param {number} k
  * @return {number}
  */
- var kthSmallest = function(root, k) {
-    let array=[]
-    let stack=[]
-    let cur=root
-    while(cur||stack.length){
-        while(cur){
+var kthSmallest = function (root, k) {
+    let array = []
+    let stack = []
+    let cur = root
+    while (cur || stack.length) {
+        while (cur) {
             stack.push(cur)
-            cur=cur.left
+            cur = cur.left
         }
-        cur=stack.pop()
+        cur = stack.pop()
         array.push(cur.val)
-        cur=cur.right
+        cur = cur.right
     }
-    return array[k-1]
+    return array[k - 1]
 };

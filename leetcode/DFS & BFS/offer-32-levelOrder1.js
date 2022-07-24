@@ -9,18 +9,18 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
- var levelOrder = function(root) {
-    let res=[]
-    let queue=[]
-    while(root||queue.length){
-        if(root.left){
+var levelOrder = function (root) {
+    let res = []
+    let queue = []
+    while (root || queue.length) {
+        if (root.left) {
             queue.push(root.left)
         }
-        if(root.right){
+        if (root.right) {
             queue.push(root.right)
         }
         res.push(root.val)
-        root=queue.shift()
+        root = queue.shift()
     }
     return res
 };

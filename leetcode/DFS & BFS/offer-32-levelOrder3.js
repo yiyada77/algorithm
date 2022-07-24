@@ -9,44 +9,44 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
- var levelOrder = function(root) {
-    let res=[]
-    let oddStack=[]
-    let evenStack=[]
-    let tempArr=[]
-    if(root){
+var levelOrder = function (root) {
+    let res = []
+    let oddStack = []
+    let evenStack = []
+    let tempArr = []
+    if (root) {
         oddStack.push(root)
-        while(oddStack.length||evenStack.length){
-            while(oddStack.length){
-                const curRoot=oddStack.pop()
-                if(curRoot.left){
+        while (oddStack.length || evenStack.length) {
+            while (oddStack.length) {
+                const curRoot = oddStack.pop()
+                if (curRoot.left) {
                     evenStack.push(curRoot.left)
                 }
-                if(curRoot.right){
+                if (curRoot.right) {
                     evenStack.push(curRoot.right)
                 }
-                tempArr.push(curRoot.val) 
+                tempArr.push(curRoot.val)
             }
-            if(tempArr.length){
+            if (tempArr.length) {
                 res.push(tempArr)
-                tempArr=[]
+                tempArr = []
             }
 
-            while(evenStack.length){
-                const curRoot=evenStack.pop()
-                if(curRoot.right){
+            while (evenStack.length) {
+                const curRoot = evenStack.pop()
+                if (curRoot.right) {
                     oddStack.push(curRoot.right)
                 }
-                if(curRoot.left){
+                if (curRoot.left) {
                     oddStack.push(curRoot.left)
                 }
-                tempArr.push(curRoot.val)   
+                tempArr.push(curRoot.val)
             }
-            if(tempArr.length){
+            if (tempArr.length) {
                 res.push(tempArr)
-                tempArr=[]
+                tempArr = []
             }
-        }   
+        }
     }
     return res
 };

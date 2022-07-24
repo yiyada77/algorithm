@@ -12,33 +12,33 @@
  */
 //left->root->right
 // 递归实现
-var inorderTraversal = function(root) {
-    let resArr=[]
-    inorderHelper(root,resArr)
+var inorderTraversal = function (root) {
+    let resArr = []
+    inorderHelper(root, resArr)
     return resArr
 };
 
-function inorderHelper(node,arr){
-    if(node){
-        inorderHelper(node.left,arr)
+function inorderHelper(node, arr) {
+    if (node) {
+        inorderHelper(node.left, arr)
         arr.push(node.val)
-        inorderHelper(node.right,arr)
+        inorderHelper(node.right, arr)
     }
     return arr
 }
 //非递归实现
-var inorderTraversal = function(root) {
-    let resArr=[]
-    let stack=[]
-    let cur=root
-    while(cur||stack.length){
-        while(cur){
+var inorderTraversal = function (root) {
+    let resArr = []
+    let stack = []
+    let cur = root
+    while (cur || stack.length) {
+        while (cur) {
             stack.push(cur)
-            cur=cur.left
+            cur = cur.left
         }
-        cur=stack.pop()
+        cur = stack.pop()
         resArr.push(cur.val)
-        cur=cur.right
+        cur = cur.right
     }
     return resArr
 };

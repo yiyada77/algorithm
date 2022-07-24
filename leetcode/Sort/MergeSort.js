@@ -13,30 +13,30 @@
  * 创建一个临时存储数组temp，比较两数组第一个元素，将较小的元素加入临时数组  
  * 若左右数组有一个为空，那么此时另一个数组一定大于temp中的所有元素，直接将其所有元素加入temp
  */
- var mergeSort = function(arr) {
-    if(arr.length<2){
+var mergeSort = function (arr) {
+    if (arr.length < 2) {
         return arr
     }
 
-    const mid=Math.floor(arr.length/2)
-    const front=arr.slice(0,mid)
-    const end=arr.slice(mid)
-    return merge(mergeSort(front),mergeSort(end))
+    const mid = Math.floor(arr.length / 2)
+    const front = arr.slice(0, mid)
+    const end = arr.slice(mid)
+    return merge(mergeSort(front), mergeSort(end))
 };
 
-function merge(front,end){
-    let temp=[]
-    while(front.length&&end.length){
-        if(front[0]>end[0]){
+function merge(front, end) {
+    let temp = []
+    while (front.length && end.length) {
+        if (front[0] > end[0]) {
             temp.push(end.shift())
-        }else{
+        } else {
             temp.push(front.shift())
         }
     }
-    while(front.length){
+    while (front.length) {
         temp.push(front.shift())
     }
-    while(end.length){
+    while (end.length) {
         temp.push(end.shift())
     }
     return temp

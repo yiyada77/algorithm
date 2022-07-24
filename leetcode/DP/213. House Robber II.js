@@ -13,24 +13,24 @@
  * @param {number[]} nums
  * @return {number}
  */
- var rob = function(nums) {
-    const n=nums.length
-    if(n===1){
+var rob = function (nums) {
+    const n = nums.length
+    if (n === 1) {
         return nums[0]
-    }else if(n===2){
-        return Math.max(nums[0],nums[1])
-    }else{
-        return Math.max(robRange(nums,0,n-1),robRange(nums,1,n))
+    } else if (n === 2) {
+        return Math.max(nums[0], nums[1])
+    } else {
+        return Math.max(robRange(nums, 0, n - 1), robRange(nums, 1, n))
     }
 };
 
-function robRange(nums,start,end){
-    let first=nums[start]
-    let second=Math.max(nums[start],nums[start+1])
-    for(let i=start+2;i<end;i++){
-        const tmp=second
-        second=Math.max(first+nums[i],second)
-        first=tmp
+function robRange(nums, start, end) {
+    let first = nums[start]
+    let second = Math.max(nums[start], nums[start + 1])
+    for (let i = start + 2; i < end; i++) {
+        const tmp = second
+        second = Math.max(first + nums[i], second)
+        first = tmp
     }
     return second
 }

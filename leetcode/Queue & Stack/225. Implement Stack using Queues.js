@@ -1,6 +1,6 @@
-var MyStack = function() {
-    this.queue1=[]
-    this.queue2=[]
+var MyStack = function () {
+    this.queue1 = []
+    this.queue2 = []
     return this
 };
 
@@ -8,19 +8,19 @@ var MyStack = function() {
  * @param {number} x
  * @return {void}
  */
-MyStack.prototype.push = function(x) {
+MyStack.prototype.push = function (x) {
     this.queue1.push(x)
 };
 
 /**
  * @return {number}
  */
-MyStack.prototype.pop = function() {
-    while(this.queue1.length>1){
+MyStack.prototype.pop = function () {
+    while (this.queue1.length > 1) {
         this.queue2.push(this.queue1.shift())
     }
-    const res=this.queue1.shift()
-    while(this.queue2.length>0){
+    const res = this.queue1.shift()
+    while (this.queue2.length > 0) {
         this.queue1.push(this.queue2.shift())
     }
     return res
@@ -29,13 +29,13 @@ MyStack.prototype.pop = function() {
 /**
  * @return {number}
  */
-MyStack.prototype.top = function() {
- while(this.queue1.length>1){
+MyStack.prototype.top = function () {
+    while (this.queue1.length > 1) {
         this.queue2.push(this.queue1.shift())
     }
-    const res=this.queue1.shift()
-     this.queue2.push(res)
-    while(this.queue2.length>0){
+    const res = this.queue1.shift()
+    this.queue2.push(res)
+    while (this.queue2.length > 0) {
         this.queue1.push(this.queue2.shift())
     }
     return res
@@ -44,8 +44,8 @@ MyStack.prototype.top = function() {
 /**
  * @return {boolean}
  */
-MyStack.prototype.empty = function() {
-    return this.queue1.length+this.queue2.length===0
+MyStack.prototype.empty = function () {
+    return this.queue1.length + this.queue2.length === 0
 };
 
 /**

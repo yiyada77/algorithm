@@ -5,19 +5,19 @@
  *
  *优化：当一次循环没有发生冒泡，说明已经排序完成，停止循环。
  */
-var bubbleSort = function(nums) {
-    if(nums.length<=1){
+var bubbleSort = function (nums) {
+    if (nums.length <= 1) {
         return nums
     }
-    for(let i=0;i<nums.length;i++){
-        let complete=true
-        for(let j=0;j<nums.length-1-i;j++){
-           if(nums[j]>nums[j+1]){
-               [nums[j],nums[j+1]]=[nums[j+1],nums[j]]
-               complete=false
-           }
+    for (let i = 0; i < nums.length; i++) {
+        let complete = true
+        for (let j = 0; j < nums.length - 1 - i; j++) {
+            if (nums[j] > nums[j + 1]) {
+                [nums[j], nums[j + 1]] = [nums[j + 1], nums[j]]
+                complete = false
+            }
         }
-        if(complete){
+        if (complete) {
             break
         }
     }
